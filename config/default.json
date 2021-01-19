@@ -1,0 +1,3 @@
+{
+	"mongoURI": "mongodb+srv://michaelpopp:michaelpopp@glucose-tracker.kgfja.mongodb.net/glucose-tracker?retryWrites=true&w=majority"
+}
