@@ -10,6 +10,8 @@ const connectDatabase = async () => {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		});
+
+		console.log('Connect to database secured...');
 	} catch (error) {
 		console.error(error.message);
 		process.exit(1);
