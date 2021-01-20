@@ -12,10 +12,10 @@ router.post(
 	'/',
 	[
 		body('name', 'Please add a name').not().isEmpty(),
-		body('email', 'Please Include a valid email').isEmail(),
+		body('email', 'Please include a valid email').isEmail(),
 		body(
 			'password',
-			'Please ebter a oasswird wutg 6 or more characters'
+			'Please ebter a passwird with 6 or more characters'
 		).isLength({ min: 6 }),
 	],
 	async (req, res) => {
