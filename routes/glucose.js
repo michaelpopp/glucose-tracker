@@ -1,3 +1,4 @@
+const auth = require('../middleware/auth');
 const { body, validationResult } = require('express-validator');
 const express = require('express');
 const router = express.Router();
@@ -11,8 +12,11 @@ const Glucose = require('../models/Glucoses');
 router.post(
 	'/',
 	[
-		body('reading', 'A glucose reading is required').not().isEmpty(),
-		body('date', 'A date is required').not().isEmpty(),
+		auth,
+		[
+			body('reading', 'A glucose reading is required').not().isEmpty(),
+			body('date', 'A date is required').not().isEmpty(),
+		],
 	],
 	async (req, res) => {
 		const errors = validationResult(req);

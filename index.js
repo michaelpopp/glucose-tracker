@@ -9,6 +9,7 @@ app.use(express.json({ extended: false }));
 
 // Defining Routes
 app.use('/users', require('./routes/users'));
+app.use('/glucoses', require('./routes/glucose'));
 
 const PORT = process.env.PORT || 8080;
 
