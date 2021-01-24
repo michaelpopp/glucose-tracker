@@ -10,6 +10,6 @@ app.use(express.json({ extended: false }));
 // Defining Routes
 app.use('/users', require('./routes/users'));
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
