@@ -1,4 +1,0 @@
-{
-	"mongoURI": "mongodb+srv://michaelpopp:michaelpopp@glucose-tracker.kgfja.mongodb.net/glucose-tracker?retryWrites=true&w=majority",
-	"jwtSecret": "asfihgbawenaoi290234IOJ@#$bjkkjb@$#LK"
-}
