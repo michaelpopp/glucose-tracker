@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
 const { body, validationResult } = require('express-validator');
@@ -7,7 +7,7 @@ const router = express.Router();
 
 const User = require('../models/Users');
 
-// @route   POST /users
+// @route   POST /user
 // @desc    Creates a user
 // @acess   Public
 router.post(

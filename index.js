@@ -8,8 +8,9 @@ connectDatabase();
 app.use(express.json({ extended: false }));
 
 // Defining Routes
-app.use('/users', require('./routes/users'));
-app.use('/glucoses', require('./routes/glucose'));
+app.use('/user', require('./routes/users'));
+app.use('/glucose', require('./routes/glucose'));
+app.use('/auth', require('./routes/auth'));
 
 const PORT = process.env.PORT || 8080;
 

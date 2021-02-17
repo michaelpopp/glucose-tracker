@@ -13,9 +13,9 @@ const GlucoseSchema = mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	type: {
-		type: 'string',
-		default: 'Upon waking up',
+	time: {
+		type: String,
+		required: true,
 	},
 });
 

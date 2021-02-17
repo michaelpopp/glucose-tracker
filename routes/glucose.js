@@ -6,7 +6,7 @@ const router = express.Router();
 const User = require('../models/Users');
 const Glucose = require('../models/Glucoses');
 
-// @route   Post /glucoses
+// @route   Post /glucose
 // @desc    creates an entry for a glucose reading
 // @acess   Private
 router.post(
