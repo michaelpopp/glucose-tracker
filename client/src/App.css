@@ -21,3 +21,7 @@ body {
 	background-color: #fff;
 	color: #3b3b3b;
 }
+
+.navbar li {
+	display: inline;
+}
